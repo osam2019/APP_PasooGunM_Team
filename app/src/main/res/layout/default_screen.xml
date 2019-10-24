@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="보안"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#BFFF0000"
+            android:textSize="150sp"
+            android:typeface="serif"
+            app:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="PasooGun M"
+            android:textColor="#EBE4E4"
+            android:textColorLink="#E2D5D5"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/userButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:onClick="redirectUser"
+            android:padding="10dip"
+            android:text="\n사용자로 로그인\n" />
+
+        <Button
+            android:id="@+id/adminButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="redirectAdmin"
+            android:padding="10dip"
+            android:text="\n관리자로 로그인\n" />
+    </LinearLayout>
+
+</LinearLayout>
